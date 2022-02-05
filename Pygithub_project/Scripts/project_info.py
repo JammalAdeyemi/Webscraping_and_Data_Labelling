@@ -26,3 +26,5 @@ def extract_project_info():
             'PRs_count': PRs.totalCount
         }, ignore_index=True)
     df_project.to_csv('../Dataset/project_dataset.csv', sep=',', encoding='utf-8', index=True)
+
+extract_project_info()
